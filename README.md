@@ -18,7 +18,7 @@ https://www.intel.com/content/www/us/en/software-kit/849770/intel-quartus-prime-
 <img width="929" height="720" alt="image" src="https://github.com/user-attachments/assets/92fd15e5-e7c6-4c21-aef9-1b9be73bba01" />
 ### Review Summary, if all information are correct, click **Finish**.
 <img width="929" height="720" alt="image" src="https://github.com/user-attachments/assets/dd15e9f2-2c9d-4ef1-8149-b680979ceef9" />
-# Creating Verilog HDL code and Uploading to the FPGA board
+# Creating Verilog HDL code and Uploading to the FPGA board (Example BCD_seven_segment_.v)
 ### Select New (CTRL + N), find and select **Verilog HDL**. A new utility window would be open and now you can create your code. In the upper left corner,  the code can be check for errors using **Analysis and Elaborate** and Analysis and Synthesis**. Once everything is in right place, the code can compiled using the **Compilation** button.
 <img width="1217" height="745" alt="image" src="https://github.com/user-attachments/assets/c1be3fec-9c86-44de-b355-3e089105cd51" />
 ### After compiling, in the messages, critical warnings, and warnings would be seen. NOTE: Some warnings can be neglected and some are not. Example, critical warning 169085, the warning states that there are 12 pin of 12 total pins are not assigned with pin location. This could be solve through the pin planner (CTRL + SHIFT + N) and assign the pin location.
@@ -29,12 +29,16 @@ https://www.terasic.com.tw/cgi-bin/page/archive_download.pl?Language=English&No=
 ### Example assigment of pin location, and run **Compilation**, if done.
 <img width="1305" height="320" alt="image" src="https://github.com/user-attachments/assets/83d7eb45-2886-455d-8dd3-fdd081cd293b" />
 
-### After compilation critical warning 169085 is gone.
+### After compilation critical warning 169085 is gone. Now, the next step is to open the **Programmer**.
 <img width="1890" height="295" alt="image" src="https://github.com/user-attachments/assets/bd53a777-c946-4b9f-992c-0db6d56c1610" />
-
+### In the **Programmer**, select **Hardware Setup** and choose **USB-Blaster**. Once done, press **START**
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a74d6b20-d1fc-4044-8a6c-59cb07a768d9" />
+### Experiment i, is now over.
 
 
 # // USB Blaster
+### If the USB-blaster cannot be found in the **Programmer**, open your **Device Manager** >>> find Altera USB-Blaster >>> update driver >>> browse computer for drivers
+### Find the location of your Quartus installation folder that has usb-blaster folder. example.  .C/intelFPGA_lite/20.1/quartus//drivers/
 
 
 
