@@ -105,7 +105,7 @@ module down_counter_top(clk, reset, enable, seg7_out, seg7_tens_out , dpt_out, b
 	counter_borrow M3( borrow, counted_borrow_flag, counted_borrow);
 	bcd_to_seg7 M4 (count_out,seg7_out);
 	bcd_to_seg7 M5	(counted_borrow,seg7_tens_out);
-	assign dpt_out = 1'b0; 	//7 segment small dot display
-	assign led_com = 1'b0;	//Light up top row LED
+	assign dpt_out = 1'b0;
+	assign led_com = 1'b0;
 
 endmodule
