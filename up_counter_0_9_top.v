@@ -78,6 +78,4 @@ module count_0_9v_top(clk, reset, enable, seg7_out, dpt_out, carry, led_com);
 	assign dpt_out = 1'b1; 	
 	assign led_com = 1'b0;	
 
-	
-	
 endmodule
