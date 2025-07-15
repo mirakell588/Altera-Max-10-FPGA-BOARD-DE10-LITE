@@ -91,7 +91,7 @@ module counter_carry(carry, counted_carry_flag, counted_carry);
 endmodule
 			
 
-module counter_top(clk, reset, enable, seg7_out, seg7_tens_out , dpt_out, carry, led_com);
+module up_counter_0_99_top(clk, reset, enable, seg7_out, seg7_tens_out , dpt_out, carry, led_com);
 	input clk, reset, enable;	
 	output[6:0] seg7_out;
 	output[6:0] seg7_tens_out;
