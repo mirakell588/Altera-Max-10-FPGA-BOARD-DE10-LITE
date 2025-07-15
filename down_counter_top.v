@@ -91,7 +91,7 @@ module counter_borrow(borrow, counted_borrow_flag, counted_borrow);
 endmodule
 			
 
-module counter_top(clk, reset, enable, seg7_out, seg7_tens_out , dpt_out, borrow, led_com);
+module down_counter_top(clk, reset, enable, seg7_out, seg7_tens_out , dpt_out, borrow, led_com);
 	input clk, reset, enable;	
 	output[6:0] seg7_out;
 	output[6:0] seg7_tens_out;
