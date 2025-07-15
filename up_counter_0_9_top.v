@@ -64,7 +64,7 @@ module freq_div (
 endmodule
 			
 
-module count_0_9v_top(clk, reset, enable, seg7_out, dpt_out, carry, led_com);
+module up_counter_0_9_top(clk, reset, enable, seg7_out, dpt_out, carry, led_com);
 	input clk, reset, enable;	
 	output[6:0] seg7_out;
 	output dpt_out, carry, led_com;
